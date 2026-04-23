@@ -14,6 +14,7 @@ import appCss from '../styles.css?url'
 
 import type { QueryClient } from '@tanstack/react-query'
 import Navbar from '#/components/Navbar'
+import Crosshair from '#/components/Crosshair'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -58,6 +59,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             <header>
               <div className='frame'>
                 <Navbar />
+                <Crosshair />
+                <Crosshair />
               </div>
             </header>
             
